@@ -1,4 +1,4 @@
-package com.myappordevos.testflow
+package com.myappordevos.testflow.presentation.viewmodels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

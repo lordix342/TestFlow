@@ -1,14 +1,14 @@
-package com.myappordevos.testflow
+package com.myappordevos.testflow.data
 
 import com.google.gson.annotations.SerializedName
 import retrofit2.http.GET
 
-interface ApiService {
+interface ApiService { // Storage
     @GET("competitions/?areas=2077")
     suspend fun getStandingList() : StandingsModels
 }
 
-data class StandingsModels(
+data class StandingsModels( // Model Storage &  another
     @SerializedName("competitions")
     val competitions: List<Competition>
 )

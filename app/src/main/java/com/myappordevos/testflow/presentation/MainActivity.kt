@@ -1,4 +1,4 @@
-package com.myappordevos.testflow
+package com.myappordevos.testflow.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.util.Log
 import androidx.activity.viewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.myappordevos.testflow.presentation.adapters.Adapter
+import com.myappordevos.testflow.presentation.viewmodels.MainViewModel
 import com.myappordevos.testflow.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

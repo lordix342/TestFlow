@@ -1,5 +1,7 @@
-package com.myappordevos.testflow
+package com.myappordevos.testflow.data.di
 
+import com.myappordevos.testflow.RepoGetter
+import com.myappordevos.testflow.Repository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

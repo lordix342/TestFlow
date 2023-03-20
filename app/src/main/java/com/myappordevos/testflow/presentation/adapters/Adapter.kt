@@ -1,4 +1,4 @@
-package com.myappordevos.testflow
+package com.myappordevos.testflow.presentation.adapters
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.myappordevos.testflow.R
 import com.myappordevos.testflow.databinding.ItemResultBinding
 
 class Adapter : RecyclerView.Adapter<Adapter.MyViewHolder>() {
@@ -22,7 +23,8 @@ class Adapter : RecyclerView.Adapter<Adapter.MyViewHolder>() {
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.item_result,parent,false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = MyViewHolder(LayoutInflater.from(parent.context).inflate(
+        R.layout.item_result,parent,false))
 
     override fun getItemCount() = myListItem.size
 
